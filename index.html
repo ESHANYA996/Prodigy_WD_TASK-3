@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Stopwatch</h1>
+
+    <div id="display" class="display">00:00.000</div>
+
+    <div class="controls">
+      <button id="startBtn" class="btn primary">Start</button>
+      <button id="lapBtn" class="btn" disabled>Lap</button>
+      <button id="resetBtn" class="btn" disabled>Reset</button>
+      <button id="clearLapsBtn" class="btn" disabled>Clear Laps</button>
+      <button id="exportBtn" class="btn" disabled>Export CSV</button>
+    </div>
+
+    <section class="laps">
+      <header class="laps-head">
+        <span>#</span>
+        <span>Lap</span>
+        <span>Total</span>
+      </header>
+      <ul id="lapsList" class="laps-list"></ul>
+    </section>
+
+    <p class="hint">Shortcuts: <kbd>Space</kbd> = Start/Pause, <kbd>L</kbd> = Lap, <kbd>R</kbd> = Reset, <kbd>Delete</kbd> = Clear Laps</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
